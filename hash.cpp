@@ -17,7 +17,7 @@ hashTable::hashTable(int size){
 
 int hashTable::insert(const std::string &key, void *pv){
 	unsigned int pos = findPos(key);
-	int wat = -1;
+	/*int wat = -1;
 	while(data[pos].isOccupied){
 		if(data[pos].key==key){
 			if(!data[pos].isDeleted)	return 1;
@@ -34,7 +34,7 @@ int hashTable::insert(const std::string &key, void *pv){
 	}
 
 	if(wat!=-1)	pos = wat;
-
+	*/
 	if(data[pos].isOccupied && !data[pos].isDeleted && data[pos].key==key)	return 1;
 	data[pos].key = key;
 	data[pos].pv = pv;
