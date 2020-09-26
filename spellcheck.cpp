@@ -44,9 +44,9 @@ void loadDict(const string& name, hashTable *table){
 		exit(-1);
 	}
 	if(inn.is_open()){
-		table->insert("test");
-		table->show("test");
-		/*while(getline(inn, line)){
+		//table->insert("test");
+		//table->show("test");
+		while(getline(inn, line)){
 			cout<<"start parsing"<<endl;
 			
 				table->insert(line);
@@ -55,7 +55,7 @@ void loadDict(const string& name, hashTable *table){
 				//table->show(line);
 		
 			
-		}*/
+		}
 	}
 	
 	cout<<"finish loading dictionary!"<<endl;
